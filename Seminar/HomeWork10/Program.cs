@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Введите трёхзначное число: ");
+string array = Console.ReadLine();
+Console.WriteLine($"Вторе введенное число в массиве: {array[1]}");
