@@ -2,16 +2,19 @@
 //645 -> 5
 //78 -> третьей цифры нет
 
-
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int lastnumber = number % 10;
 
-if (99 < number)
+if (number > 99) 
 {
+    while (number > 1000)
+{
+    number = (number / 10);
+}
     Console.WriteLine($"Третья цифра заданного числа: {lastnumber}");
 }
-else
+else 
 {
-    Console.WriteLine("Третей цифры нет");
+    Console.WriteLine("Нет трёх чисел");
 }
