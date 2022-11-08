@@ -3,14 +3,11 @@
 int GetSum(int number)
 {
     int sum = 0;
-
-    int tempVilue = 1;
-    while (tempVilue <= number)
+    for (int i = 1; i<= number; i++)
     {
-        sum = sum + tempVilue;
-        tempVilue = tempVilue + 1;
+        sum = sum + i;
     }
-
+    
     return sum;
 }
 
@@ -19,3 +16,9 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int sum = GetSum(number);
 Console.WriteLine(sum);
+
+
+//Console.Write("Enter a number:");
+//int number = Convert.ToInt32(Console.ReadLine());
+//string strNumber = Math.Abs(number).ToString();
+//Console.WriteLine(strNumber.Length);
