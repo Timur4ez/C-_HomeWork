@@ -7,6 +7,9 @@ if (n < 0) Console.WriteLine("И в каком месте это число > 0"
 
 while(number <= n)
 {
-    if (number % 2 == 0) Console.WriteLine($"Чётное число: {number}");
+    if (number % 2 == 0) 
+    {
+        Console.WriteLine($"Чётное число: {number}");
+    }
     number = number + 1;
 }

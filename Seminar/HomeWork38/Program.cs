@@ -27,6 +27,6 @@ for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().NextDouble() * 10;
 }
-Console.WriteLine("Массив [{0}]", string.Join("; ", array));
+Console.WriteLine("(Массив [{0}]", string.Join("; ", array));
 double result = SearchMaxMin(array);
 Console.WriteLine($"Разница между минимальным и максимальным значением: {result}");

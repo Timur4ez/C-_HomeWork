@@ -11,8 +11,7 @@ if(halfarray % 2 != 0)
 int[] newarray = new int[halfarray];
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(0, 10);
-    
+    array[i] = new Random().Next(0, 10);    
 }
 Console.Write("Старый массив [{0}]", string.Join(", ", array));
 for (int i = 0; i < halfarray; i++)
