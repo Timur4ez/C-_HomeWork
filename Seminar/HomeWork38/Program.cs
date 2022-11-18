@@ -6,7 +6,7 @@ double SearchMaxMin(double[] array)
     double max = array[0];
     double min = array[0];
     for (int i = 1; i < array.Length; i++)
-    {
+        {
         if (max < array[i])
         {
             max = array[i];
