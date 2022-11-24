@@ -3,9 +3,14 @@
 Console.Write("Write number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int SumRec(int number)
+int SumRec(int number, int currentSum)
 {
- if (number == 0) return 0;
- else return number + SumRec(number - 1);
+    if (number > 9) 
+    {
+        currentSum += number % 10;
+        int temp = number / 10; 
+        return SumRec(temp, currentSum);
+    }
+    else return currentSum + number;
 }
-Console.WriteLine(SumRec(number));
+Console.WriteLine(SumRec(number, 0));
